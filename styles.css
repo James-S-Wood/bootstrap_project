@@ -1,17 +1,16 @@
 /* Custom styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
 }
 
-h1 {
+h1, h2, h3 {
     color: #333;
     text-align: center;
     margin-top: 40px;
 }
 
 h2 {
-    color: #333;
     margin-bottom: 20px;
 }
 
@@ -24,39 +23,117 @@ section {
     padding: 40px 0;
 }
 
-/* Responsive styles */
-@media (max-width: 576px) {
-    h1 {
-        font-size: 24px;
-    }
+/* Hero section styles */
+#hero {
+    background-image: url("Photos/Oracle_Background_1.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Service section styles */
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.service-icon {
+    flex-shrink: 0;
+    margin-right: 20px;
+    font-size: 40px;
+    color: #007bff;
+}
+
+.service-icon i {
+    vertical-align: middle;
+}
+
+.service-list h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Contact form styles */
 form {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
-/* Service list styles */
-ul {
-    list-style: none;
-    padding-left: 0;
+.form-group {
+    margin-bottom: 20px;
 }
 
-ul li:before {
-    content: "\2022";
-    margin-right: 5px;
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-/* Hero section styles */
-#hero {
-    background-image: url("path-to-your-image.jpg");
-    background-size: cover;
-    background-position: center;
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
     color: #fff;
+    cursor: pointer;
 }
 
-#hero h1,
-#hero p {
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
     color: #fff;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #hero {
+        padding: 100px 0;
+    }
 }
